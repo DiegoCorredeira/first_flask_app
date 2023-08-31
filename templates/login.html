@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Login </title>
-    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
 </head>
 <body>
+  <main class="wrapper">
     <div class="container">
         <h2>Faça o seu login.</h2>
         {% for message in messages %}
         <div class="flash-message">{{ message }}</div>
         {% endfor %}
         <form action="{{ url_for('login') }}" method="post" autocomplete="off">
-
             <label for="username">Username: </label>
             <input type="text" name="username" id="username">
             <label for="password">Senha: </label>
@@ -22,6 +22,6 @@
         </form>
         <a class="linkbutton" href="{{ url_for('index') }}">Voltar para a página inicial</a>
     </div>
-    
+  </main>
 </body>
 </html>

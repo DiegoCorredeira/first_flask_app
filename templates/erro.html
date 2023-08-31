@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erro!</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='erro.css') }}">
 </head>
 <body>
+    
     <img src="{{url_for('static', filename='logo.avif')}}" alt="Logo da Empresa" class="logo">
     <div class="container">
-        <h1 id="erro">Erro!</h1>
+        <h1 class="erro">Erro!</h1>
         <p>{{mensagem}}</p>
-        <a href="/" class="btn">Voltar</a>
+        <a href="/" class="linkbutton">Voltar</a>
     </div>
 </body>
 </html>

@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+:root{
+    --Blue: #095484;
+    --LightBlue: #1c87c9;
+    --White: white;
+    --White2: #ccc;
+    --Green: green;
+    --LightyGreen: #dff0d8;
+    --LightGreen: #d6e9c6;
+    --Gray: #333;
+    --Red: red;
+    --Black: rgba(0, 0, 0, 0.5);
+}
+
+h1, h2{
+    text-align: center;
+    color: var(--Gray);
+    padding: 0.5rem;
+}
+p{
+    margin-bottom: 1rem;
+    color: var(--Gray);
+}
+label{
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bolder;
+}
+input, select{
+    display: flex;
+    padding: 0.6rem;
+    width: 100%;
+    border: 1px solid var(--White2);
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--Gray);
+}
+button{
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--LightBlue);
+    color: var(--White);
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--Blue);
+}
+a{
+  text-decoration: none;   
+}
+
+.logo {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+    background-color: var(--White);
+    border-radius: 5px;
+    box-shadow: 0 3px 5px var(--Black);
+}
+
+.linkbutton{
+    display: flex;
+    padding: 0.5rem;
+    color: var(--White);
+    background-color: var(--LightBlue);
+    border-radius: 4px;
+}
+.linkbutton:hover{
+    background-color: var(--Blue);
+}
+
+
+
+.flash-message {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    background-color: var(--White);
+}
+
+.flash-message.success {
+    color: var(--Green);
+}
+
+.flash-message.error {
+    color: var(--Red);
+}
+
+
+
+

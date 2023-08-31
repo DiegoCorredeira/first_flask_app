@@ -1,0 +1,6 @@
+.confirmacao{
+    background-color: var(--LightyGreen);
+    padding: 1.2rem;
+    border: 1px solid var(--LightGreen);
+    border-radius: 5px;
+}

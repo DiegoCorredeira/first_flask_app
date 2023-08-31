@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <title>Cadastro</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
 </head>
 <body>
+  <main>
     <div class="container">
         <h2>Cadastro</h2>
         <form action="{{ url_for('cadastro') }}" method="post" autocomplete="off">
@@ -18,5 +19,6 @@
             <a class="linkbutton" href="{{ url_for('index') }}">Voltar para a página inicial</a>
         </form>
     </div>
+  </main>
 </body>
 </html>

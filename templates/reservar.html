@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservar</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
 </head>
 <body>
+  <main>
     <div class="container">
         <h1>Fazer Reserva</h1>
         <p>Bem-vindo, {{ session.username }}! <a href="{{ url_for('logout') }}">Sair</a></p>
@@ -30,5 +31,6 @@
         </form>
         <a class="linkbutton" href="{{ url_for('index') }}">Voltar para a página inicial</a>
     </div>
+  </main>
 </body>
 </html>
