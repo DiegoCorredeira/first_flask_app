@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de agendamento</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <img src="{{url_for('static', filename='logo.avif')}}" alt="Logo da Empresa" class="logo">
+
+    <div class="container">
+        <h1>Confirmação</h1>
+        <div class="confirmacao">
+            <p>Reserva de Confirmação para: </p>
+            <p><strong>Nome: </strong> {{nome}}</p>
+            <p><strong>Serviço: </strong> {{servico}}</p>
+            <p><strong>Data: </strong> {{data}}</p>
+            <p><strong>Hora: </strong> {{hora}}</p>
+        </div>
+    <a class="btn-voltar" href="javascript:history.back()">Voltar</a>
+    
+</body>
+</html>

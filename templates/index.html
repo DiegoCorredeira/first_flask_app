@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estou Flaskzado!</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <img src="{{url_for('static', filename='logo.avif')}}" alt="Logo da Empresa" class="logo">
+    <div class="container">
+        <h1>Faça sua reserva!</h1>
+        <p id="maintext">Por favor, faça <a href="{{url_for('login')}}">Faça login</a> ou <a href="{{url_for('cadastro')}}">Cadastre-se</a></p>
+    </div>
+</body>
+</html>

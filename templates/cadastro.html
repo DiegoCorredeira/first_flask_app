@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <form action="{{ url_for('cadastro') }}" method="post" autocomplete="off">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" name="username" id="username" required><br><br>
+            <label for="password">Senha:</label>
+            <input type="password" name="password" id="password" required><br><br>
+            <label for="password">Repetir senha:</label>
+            <input type="password" name="password" id="password" required><br><br>
+            <button type="submit">Cadastrar</button>
+            <a class="linkbutton" href="{{ url_for('index') }}">Voltar para a página inicial</a>
+        </form>
+    </div>
+</body>
+</html>
